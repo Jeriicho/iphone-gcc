@@ -1,0 +1,15 @@
+/*
+ *
+ * kern_return.h for ARM processor
+ *
+ */
+
+#ifndef _MACH_ARM_KERN_RETURN_H_
+#define _MACH_ARM_KERN_RETURN_H_
+
+#ifndef ASSEMBLER
+typedef int             kern_return_t;
+#endif  /* ASSEMBLER */
+
+#endif  /* _MACH_PPC_KERN_RETURN_H_ */
+
