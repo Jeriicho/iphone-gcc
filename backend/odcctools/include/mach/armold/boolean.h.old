@@ -1,0 +1,17 @@
+/*
+ *
+ *   ARM boolean.h
+ *
+ */
+
+#ifndef _MACH_ARM_BOOLEAN_H_
+#define _MACH_ARM_BOOLEAN_H_
+
+#if defined(__arm__)
+typedef unsigned int    boolean_t;
+#else
+typedef int             boolean_t;
+#endif
+
+#endif  /* _MACH_PPC_BOOLEAN_H_ */
+
