@@ -2,11 +2,11 @@
 
 = Introduction =
 
-Here are some simple instructions to install the toolchain on the iPhone.  The guide assumes that BSD subsystem is installed.  There is a bit of command-line work, so either SSH package or Terminal + iphuc must be installed.  These packages were built and tested on firmware 1.1.4, but they may work on older firmwares, too.  YMMV
+Here are some simple instructions to install the toolchain on the iPhone.  The guide assumes that BSD subsystem is installed.  There is a bit of command-line work, so either SSH package or Terminal + iphuc must be installed.  These packages were built and tested on firmware 1.1.4, but they may work on older firmwares, too (YMMV).
 
 = Details =
 
-All the packages from this project will go in /usr/local on the iPhone, so make sure you have plenty of space.  I chose to put my /usr/local on the Media partition.  Here are the steps (Terminal or SSH):
+All the packages from this project will go in /usr/local on the iPhone, so make sure you have plenty of space.  I chose to put my /usr/local on the Media partition.  Here are the steps:
 {{{
 $ cd Media
 $ mkdir local
@@ -14,12 +14,25 @@ $ login -pf root
 Password:
 # ln -s /var/mobile/Media/local /usr/local
 # exit
-$ exit
 }}}
 
-Copy [http://iphone-gcc.googlecode.com/files/gcc-4.0.1-iphone-1.tgz gcc-4.0.1-iphone-1.tgz] on the iPhone to /var/mobile/Media/gcc-4.0.1-iphone-1.tgz.  Unpack it (Terminal or SSH):
+Copy [http://iphone-gcc.googlecode.com/files/gcc-4.0.1-iphone-1.tgz gcc-4.0.1-iphone-1.tgz] on the iPhone to /var/mobile/Media/gcc-4.0.1-iphone-1.tgz and unpack it:
 {{{
-cd /
-tar -xzf /var/mobile/Media/gcc-4.0.1-iphone-1.tgz
-exit
+$ cd /
+$ tar -xzf /var/mobile/Media/gcc-4.0.1-iphone-1.tgz
+$ rm /var/mobile/Media/gcc-4.0.1-iphone-1.tgz
+}}}
+
+Copy [http://iphone-gcc.googlecode.com/files/odcctools-9.2-ld-iphone-1.tgz odcctools-9.2-ld-iphone-1.tgz] on the iPhone to /var/mobile/Media/odcctools-9.2-ld-iphone-1.tgz and unpack it:
+{{{
+$ cd /
+$ tar -xzf /var/mobile/Media/odcctools-9.2-ld-iphone-1.tgz
+$ rm /var/mobile/Media/odcctools-9.2-ld-iphone-1.tgz
+}}}
+
+Copy [http://iphone-gcc.googlecode.com/files/make-3.81-iphone-1.tgz make-3.81-iphone-1.tgz] on the iPhone to /var/mobile/Media/make-3.81-iphone-1.tgz and unpack it:
+{{{
+$ cd /
+$ tar -xzf /var/mobile/Media/make-3.81-iphone-1.tgz
+$ rm /var/mobile/Media/make-3.81-iphone-1.tgz
 }}}
