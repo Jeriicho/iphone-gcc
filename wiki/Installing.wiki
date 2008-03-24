@@ -1,0 +1,9 @@
+#summary How to install the toolchain on the iPhone.
+
+= Introduction =
+
+Here are some simple instructions to install the toolchain on the iPhone.  The guide assumes that BSD subsystem is installed.  There is a bit of command-line work, so either SSH package or Terminal + iphuc must be installed.
+
+= Details =
+
+WIP
