@@ -43,3 +43,19 @@ $ cd /
 $ tar -xzf /var/mobile/Media/headers-4.0.0-iphone-1.tgz
 $ rm /var/mobile/Media/headers-4.0.0-iphone-1.tgz
 }}}
+
+Okay, so you don't have headers-4.0.0-iphone-1.tgz; you have to built this package yourself.  The following steps must be done on your computer:
+{{{
+$ svn co http://iphone-dev.googlecode.com/svn/branches/include-1.2-sdk
+$ wget http://iphone-gcc.googlecode.com/files/headers.patch.gz
+$ THISPATH=`pwd`
+$ INSTPATH=$THISPATH/usr/local
+$ MACOSXDK=path_to/MacOSX10.4u.sdk
+$ pushd include-1.2-sdk
+$ ./configure --with-macosx-sdk=$MACOSXDK --prefix=$INSTPATH
+$ bash install-headers.sh
+$ cd $INSTPATH/include && zcat $THISPATH/headers.patch.gz | patch -p1
+$ cd $INSTPATH/include/c++ && ln -s 4.0.0 4.0.1
+$ popd
+$ tar -czf headers-4.0.0-iphone-1.tgz usr
+}}}
