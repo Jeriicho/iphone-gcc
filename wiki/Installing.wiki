@@ -17,4 +17,9 @@ Password:
 $ exit
 }}}
 
-Copy http://iphone-gcc.googlecode.com/files/gcc-4.0.1-iphone-1.tgz on the iPhone to /var/mobile/Media/gcc-4.0.1-iphone-1.tgz
+Copy [http://iphone-gcc.googlecode.com/files/gcc-4.0.1-iphone-1.tgz gcc-4.0.1-iphone-1.tgz] on the iPhone to /var/mobile/Media/gcc-4.0.1-iphone-1.tgz.  Unpack it (Terminal or SSH):
+{{{
+cd /
+tar -xzf /var/mobile/Media/gcc-4.0.1-iphone-1.tgz
+exit
+}}}
