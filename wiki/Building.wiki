@@ -1,4 +1,4 @@
-#summary Building iPhone toolchain on the iPhone.
+#summary How to build the toolchain on the iPhone.
 
 = Introduction =
 
