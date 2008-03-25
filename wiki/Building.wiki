@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Here are some simple instructions to install the toolchain to the iPhone.
+Here are some simple instructions to build the toolchain on the iPhone.
 
 = Details =
 
