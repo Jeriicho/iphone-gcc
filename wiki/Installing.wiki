@@ -45,7 +45,7 @@ $ tar -xzf /var/mobile/Media/headers-4.0.0-iphone-1.tgz
 $ rm /var/mobile/Media/headers-4.0.0-iphone-1.tgz
 }}}
 
-Okay, so you don't have headers-4.0.0-iphone-1.tgz; you have to built this package yourself.  The following steps must be done on your computer:
+Okay, so you don't have headers-4.0.0-iphone-1.tgz; you have to build this package yourself.  The following steps must be done on your computer:
 {{{
 $ svn co http://iphone-dev.googlecode.com/svn/branches/include-1.2-sdk
 $ wget http://iphone-gcc.googlecode.com/files/headers.patch.gz
