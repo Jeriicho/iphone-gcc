@@ -62,8 +62,7 @@ $ tar -czf headers-4.0.0-iphone-1.tgz usr
 }}}
 
 If you aren't on Mac OS X, replace the /Developer/SDKs/MacOSX10.4u.sdk path with the full path to the unpacked Mac OS X 10.4 Universal SDK.  If you don't have a copy of this, download the Xcode 3.0 DMG from Apple's Developer Tools download page.  It is free, but you will need to register with them.
-Extract the Packages/MacOSX10.4.Universal.pkg directory from the Xcode DMG (use PowerISO, TransMac or plain old mount if on Linux).
-On Linux, you'll need [http://xar.googlecode.com xar]:
+Extract the Packages/MacOSX10.4.Universal.pkg directory from the Xcode DMG (use PowerISO, TransMac or plain old mount if on Linux).  You'll also need [http://xar.googlecode.com xar]:
 {{{
 $ xar -xf MacOSX10.4.Universal.pkg
 $ gzip -dc Payload | cpio -i
